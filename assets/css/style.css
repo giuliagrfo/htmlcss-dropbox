@@ -94,6 +94,7 @@ button {
     border: none;
     padding: 0.4rem 0.8rem;
     color: var(--db-white);
+    font-size: 10px;
 }
 
 /* #region JUMBO */
@@ -118,8 +119,9 @@ h1 {
     padding-top: 2rem;
 }
 
-.drop_info p {
+.drop_info {
     padding-right: 1.5rem;
+    width: 300px;
 }
 
 .drop_info button {
@@ -136,18 +138,27 @@ h1 {
     font-size: 30px;
     padding-top: 2rem;
 }
+
+.jumbo_img {
+    position: absolute;
+}
+
+.jb_img {
+    width: 550px;
+    position: relative;
+    left: 300px;
+}
 /* #endregion JUMBO */
  
 /* #region MAIN */
 .business_plan {
     width: 50%;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 6rem;
 }
 
 .business_plan h3 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 30px;
 }
 
 .ck_blue {
@@ -171,22 +182,133 @@ h1 {
 }
 
 .fatturazione {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 0.5rem;
     display: inline-block;
 }
 /* #endregion MAIN */
 
 
-.single {
-    border: 1px solid var(--db-language);
-    width: 200px;
+.users {
+    border: 1px solid #ECECEE;
     text-align: center;
+    padding: 0.5rem;
 }
 
-.professional {
-    border: 1px solid var(--db-language);
+.level {
+    border: 1px solid #ECECEE;
     border-top: none;
     width: 200px;
-    height: 600px;
+    height: 650px;
+}
+
+.col_4 h4, .cost, .month, .user, .cloud, .share, .contact {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    
+}
+
+.month, .user, .cloud, .share, .contact {
+    font-size: 10px;
+}
+
+
+.month {
+    color: #c4c4c4;
+}
+
+.level button {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 10px;
+    padding: 0.5rem 2rem;
+    margin-left: 1rem;
+}
+
+.card_enterprise button {
+    padding: 0.5rem 4rem;
+}
+
+.level a {
+    text-decoration: none;
+    color: var(--db-button);
+}
+
+.level h4 {
+    font-size: 16px;
+}
+
+.otherwise {
+    margin-left: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.prime {
+    padding-top: 5rem;
+    padding-left: 1rem;
+}
+
+.prime h5 {
+    margin-bottom: 0.5rem;
+}
+
+.prime li {
+    list-style: none;
+    font-size: 10px;
+    padding-top: 1rem;
+}
+
+li i{
+    color: var(--db-button);
+}
+
+.card_enterprise {
+    padding-top: 1rem;
+}
+
+.team {
+    margin-top: 1rem;
+    width: 100%;
+    flex-direction: column;
+}
+
+.card_team h4 {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.card_team {
+    padding-top: 1rem;
+    border: 1px solid #ECECEE;
+    border-top: none;
+    height: 150px;
+    text-align: start;
+}
+
+.team_enterprise {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_enterprise h4 {
+    padding-left: 1rem;
+    font-size: 16px;
+}
+
+.team_enterprise button {
+    margin-right: 1rem;
+}
+
+.card_team p {
+    padding-top: 3rem;
+}
+
+.cost, .contact {
+    font-size: 10px;
+}
+
+.contact {
+    width: 70%;
 }
