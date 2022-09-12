@@ -6,12 +6,12 @@
     --db-asu: #61082B;
     --db-language: #6A6A6A;
     --db-designit: #A2D39B;
-    --db-hearst: #B4D0E7;
+    --db-jumbo: #B4D0E7;
     --db-worldbicycle: #D5001F;
     --db-designitlarge: #F5F5F5;
     --db-topps: #FF1C1C;
     --db-clearchannel: #FFD830;
-    --db-main: #FFFFFF;
+    --db-white: #FFFFFF;
 }
 
 * {
@@ -22,6 +22,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+
 }
 
 .row {
@@ -29,51 +31,120 @@ body {
     justify-content: space-between;
 }
 
+img {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 /* #region COLUMN */
 
-    .col-2 {
+    .col_2 {
         width: calc(100% / 12)*2;
     }
 
-    .col-3 {
+    .col_3 {
         width: calc(100% / 12)*3;
     }
 
-    .col-4 {
+    .col_4 {
         width: calc(100% / 12)*4;
     }
 
-    .col-6 {
+    .col_6 {
         width: calc(100% / 12)*6;
     }
     
-    .col-8 {
+    .col_8 {
         width: calc(100% / 12)*8;
     }
     
-    .col-9 {
+    .col_9 {
         width: calc(100% / 12)*9;
     }
     
     /* #endregion COLUMN */
     
     
-    header {
-        padding: 1rem;
-    }
+header {
+    padding: 1rem;
+}
 
-    .hd_logo {
-        vertical-align: middle;
-        padding-right: 1rem;
-    }
+.hd_logo {
+    vertical-align: middle;
+    padding-right: 1rem;
+    width: 25%;
+}
     
-    .links {
+.links {
         display: inline-block;
-    }
+}
 
-    header a {
-        text-decoration: none;
-        color: #000000;
-        padding: 1rem;
-        font-size: 12px;
-    }
+header a {
+    text-decoration: none;
+    color: #000000;
+    padding: 1rem;
+}
+
+button {
+    background-color: var(--db-button);
+    border: none;
+    padding: 0.4rem 0.8rem;
+    color: var(--db-white);
+}
+
+/* #region JUMBO */
+.jumbotron {
+    background-color: var(--db-jumbo);
+    text-align: center;
+    position: absolute;
+}
+
+h1 {
+    font-size: 50px;
+    padding-top: 3rem;
+}
+
+.jb_container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+.drop_info {
+    position: relative;    
+    bottom: -50px;
+}
+.drop_info p {
+    padding-right: 1.5rem;
+}
+
+.drop_info button {
+    margin-top: 1rem;
+}
+
+.cancel {
+    padding-top: 1rem;
+}
+
+.arrow {
+    background-color: transparent;
+    color:#000000;
+    font-size: 30px;
+    padding-top: 2rem;
+    position: relative;
+    bottom: 30px;
+}
+
+.jumbo_img {
+    position: relative;
+    bottom: -50px;
+}
+
+/* .jb_img {
+    width: 600px;
+} */
+/* #endregion JUMBO */
