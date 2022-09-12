@@ -151,7 +151,7 @@ h1 {
 /* #endregion JUMBO */
  
 /* #region MAIN */
-.business_plan {
+.container {
     width: 50%;
     margin: 0 auto;
     padding-top: 6rem;
@@ -268,7 +268,7 @@ li i{
     padding-top: 1rem;
 }
 
-.team {
+.rw_team {
     margin-top: 1rem;
     width: 100%;
     flex-direction: column;
@@ -311,4 +311,28 @@ li i{
 
 .contact {
     width: 70%;
+}
+
+
+.img_partner {
+    width: 60%;
+    float: left;
+    padding-right: 2.5rem;
+}
+
+.partner_info h4 {
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+.partner_info p {
+    padding-right: 1rem;
+}
+
+.partner_button {
+    background-color: var(--db-white);
+    color: black;
+    border: 1px solid black;
+    margin-top: 1rem;
 }
