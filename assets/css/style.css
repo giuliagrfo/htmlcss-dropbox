@@ -1,5 +1,79 @@
+:root {
+    --db-footer: #000000;
+    --db-button: #0061FF;
+    --db-florida: #0093CE;
+    --db-lonelyplanet: #0D2481;
+    --db-asu: #61082B;
+    --db-language: #6A6A6A;
+    --db-designit: #A2D39B;
+    --db-hearst: #B4D0E7;
+    --db-worldbicycle: #D5001F;
+    --db-designitlarge: #F5F5F5;
+    --db-topps: #FF1C1C;
+    --db-clearchannel: #FFD830;
+    --db-main: #FFFFFF;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } 
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #region COLUMN */
+
+    .col-2 {
+        width: calc(100% / 12)*2;
+    }
+
+    .col-3 {
+        width: calc(100% / 12)*3;
+    }
+
+    .col-4 {
+        width: calc(100% / 12)*4;
+    }
+
+    .col-6 {
+        width: calc(100% / 12)*6;
+    }
+    
+    .col-8 {
+        width: calc(100% / 12)*8;
+    }
+    
+    .col-9 {
+        width: calc(100% / 12)*9;
+    }
+    
+    /* #endregion COLUMN */
+    
+    
+    header {
+        padding: 1rem;
+    }
+
+    .hd_logo {
+        vertical-align: middle;
+        padding-right: 1rem;
+    }
+    
+    .links {
+        display: inline-block;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #000000;
+        padding: 1rem;
+        font-size: 12px;
+    }
