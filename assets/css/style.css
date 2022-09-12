@@ -181,6 +181,10 @@ h1 {
 
 }
 
+.billing {
+    padding-right: 3rem;
+}
+
 .fatturazione {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -302,7 +306,7 @@ li i{
 }
 
 .card_team p {
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .cost, .contact {
