@@ -511,13 +511,27 @@ li i{
 
 }
 
-.question {
+.question_3{
     border-bottom: 1px solid;
     margin-bottom: 6rem;
 }
 
-.question i {
+.ask i {
     margin-left: 8rem;
+}
+
+.answer {
+    display: none;
+    font-size: 10px;
+    padding-bottom: 2rem;
+}
+
+.ask h6:hover {
+    cursor: pointer;
+}
+
+.ask h6:hover + .answer {
+    display: block;
 }
 
 footer {
