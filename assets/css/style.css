@@ -402,6 +402,7 @@ li i{
     width: 100vw;
 }
 
+
 .box {
     flex-basis: 50%;
     display: flex;
@@ -413,6 +414,10 @@ li i{
 .lg_team img {
     width: 100px;
 } 
+
+path {
+    fill: var(--db-white);
+}
 
 .box1 {
     background-color: var(--db-designit);
