@@ -12,6 +12,8 @@
     --db-topps: #FF1C1C;
     --db-clearchannel: #FFD830;
     --db-white: #FFFFFF;
+    --db-lightgrey: #c4c4c4;
+    --db-border: #ECECEE;
 }
 
 * {
@@ -22,7 +24,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 
 }
 
@@ -104,7 +106,7 @@ button {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 70px;
     padding-top: 3rem;
 }
 
@@ -158,7 +160,7 @@ h1 {
 }
 
 .business_plan h3 {
-    font-size: 30px;
+    font-size: 36px;
 }
 
 .ck_blue {
@@ -193,27 +195,30 @@ h1 {
 }
 /* #endregion MAIN */
 
+.users, .level {
+    border: 1px solid var(--db-border);
+}
 
 .users {
-    border: 1px solid #ECECEE;
     text-align: center;
     padding: 0.5rem;
 }
 
 .level {
-    border: 1px solid #ECECEE;
+    
     border-top: none;
     width: 200px;
     height: 650px;
 }
 
-.col_4 h4, .cost, .month, .user, .cloud, .share, .contact {
+.level h4, .cost, .month, .user, .cloud, .share, .contact {
     padding-top: 1rem;
     padding-left: 1rem;
+    padding-right: 1rem;
     
 }
 
-.month, .user, .cloud, .share, .contact {
+.month, .user, .cloud, .share, .contact, .buynow {
     font-size: 10px;
 }
 
@@ -226,12 +231,12 @@ h1 {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     font-size: 10px;
-    padding: 0.5rem 2rem;
-    margin-left: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-left: 1.2rem;
 }
 
-.card_enterprise button {
-    padding: 0.5rem 4rem;
+.card_azienda button {
+    padding: 0.5rem 3.6rem;
 }
 
 .level a {
@@ -268,22 +273,18 @@ li i{
     color: var(--db-button);
 }
 
-.card_enterprise {
+/* .card_enterprise {
     padding-top: 1rem;
-}
+} */
 
-.rw_team {
+.rw_team2 {
     margin-top: 1rem;
     width: 100%;
     flex-direction: column;
 }
 
-.card_team h4 {
-    display: inline-block;
-    justify-content: space-between;
-}
 
-.card_team {
+.card_team2 {
     padding-top: 1rem;
     border: 1px solid #ECECEE;
     border-top: none;
@@ -298,25 +299,24 @@ li i{
 
 .team_enterprise h4 {
     padding-left: 1rem;
+}
+
+.team_enterprise h4, .task h4 {
     font-size: 16px;
 }
 
 .team_enterprise button {
     margin-right: 1rem;
-}
-
-.card_team p {
-    padding-top: 2rem;
+    padding: 0.5rem 1.5rem;
 }
 
 .cost, .contact {
     font-size: 10px;
 }
 
-.contact {
-    width: 70%;
+.contact p {
+    margin-top: 2rem;
 }
-
 
 .img_partner {
     width: 60%;
@@ -340,3 +340,22 @@ li i{
     border: 1px solid black;
     margin-top: 1rem;
 }
+
+.rw_task {
+    gap: 30px;
+}
+
+.task h3 {
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+
+.task h4 {
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+
+.task p {
+    font-size: 10px;
+}
+
