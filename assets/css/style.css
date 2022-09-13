@@ -76,7 +76,9 @@ img {
     
     
 header {
+    width: 100%;
     padding: 1rem;
+    background-color: var(--db-white);
 }
 
 .hd_logo {
@@ -111,7 +113,6 @@ button {
 
 h1 {
     font-size: 70px;
-    padding-top: 3rem;
 }
 
 .jb_container {
@@ -119,6 +120,7 @@ h1 {
     margin: 0 auto;
     text-align: start;
     background-color: var(--db-jumbo);
+
 }
 
 .drop_info, .jumbo_img {
@@ -371,18 +373,17 @@ li i{
     padding-right: 10rem;
 }
 
-.logo_team {
+/* .lg_team {
     display: flex;
-   
-}
+    
+} */
 
 .left, .right {
     margin-top: 5rem;
     display: flex;
-    width: 500px;
-    height: 500px;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100vw;
 }
 
 .box {
@@ -390,9 +391,10 @@ li i{
     display: flex;
     align-items: center;
     justify-content: center;
+    aspect-ratio: 1/1;
 }
 
-.box img {
+.lg_team img {
     width: 100px;
 } 
 
@@ -400,8 +402,6 @@ li i{
     background-color: var(--db-designit);
     border: 10px solid var(--db-borderdesign);
 }
-
-
 
 .box2 {
     background-color: var(--db-asu);
@@ -433,8 +433,7 @@ li i{
 
 .center {
     display: flex;
-    width: 500px;
-    height: 500px;
+    width: 100vw;
     margin-top: 5rem;
 }
 
@@ -443,9 +442,7 @@ li i{
 }
 
 .box5 {
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-right: 2rem;
+    padding: 2rem;
     background-color: var(--db-designitlarge);
 }
 
@@ -463,6 +460,8 @@ li i{
 
 .heading {
     font-size: 12px;
+    padding-bottom: 2rem;
+
 }
 
 .container_trial {
@@ -518,3 +517,46 @@ li i{
     margin-left: 8rem;
 }
 
+footer {
+    background-color: var(--db-footer);
+    color: white;
+}
+
+.container_ft {
+    width: 60%;
+    margin: auto;
+    padding-top: 5rem;
+    
+}
+
+.rw_ft li{
+    list-style: none;
+    font-size: 10px;
+    padding-bottom: 0.5rem;
+}
+
+.rw_ft a {
+    text-decoration: none;
+    color: var(--db-white)
+}
+
+.rw_ft h4 {
+    margin-bottom: 1rem;
+}
+
+.lg_change {
+    padding-top: 6rem;
+    font-size: 10px;
+    padding-bottom: 1rem;
+
+}
+
+.language {
+    border-top: 1px solid white;
+    padding-top: 1.5rem;
+    color:  var(--db-language);
+}
+
+.lg_change i {
+    padding-right: 0.25rem;
+} 
