@@ -149,28 +149,25 @@ h1 {
 }
 
 .drop_info button {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .cancel {
     padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .arrow {
     background-color: transparent;
     color:#000000;
     font-size: 30px;
-    padding-top: 2rem;
-}
-
-.arrow:hover + .business_plan{
-    display: block;
 }
 
 .jb_img {
     width: 600px;
     position: absolute;
-    left: 650px;
+    left: 550px;
+    top: 450px;
 }
 /* #endregion JUMBO */
  
