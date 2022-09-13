@@ -14,6 +14,7 @@
     --db-white: #FFFFFF;
     --db-lightgrey: #c4c4c4;
     --db-border: #ECECEE;
+    --db-borderdesign: #D1E9CD;
 }
 
 * {
@@ -65,6 +66,10 @@ img {
     
     .col_9 {
         width: calc(100% / 12)*9;
+    }
+
+    .col_12 {
+        width: calc(100% / 12)*12;
     }
     
     /* #endregion COLUMN */
@@ -344,7 +349,7 @@ li i{
     gap: 30px;
 }
 
-.task h3, .companies h3 {
+.task h3, .companies h3{
     font-size: 25px;
     margin-bottom: 2rem;
 }
@@ -393,6 +398,7 @@ li i{
 
 .box1 {
     background-color: var(--db-designit);
+    border: 10px solid var(--db-borderdesign);
 }
 
 .box2 {
@@ -455,3 +461,34 @@ li i{
 .heading {
     font-size: 12px;
 }
+
+.container_trial {
+    width: 60%;
+    margin: auto;
+    padding-top: 6rem;
+}
+
+.trial {
+    background-color: var(--db-jumbo);
+}
+
+.trial h3 {
+    font-size: 25px;
+    color:  var(--db-asu);
+    padding-right: 2rem;
+}
+
+.trial_bt button {
+    background-color: var(--db-white) ;
+    color: var(--db-footer);
+    padding: 0.5rem 2rem;
+}
+
+.rw_trial {
+    padding-bottom: 2rem;
+}
+
+.trial_title {
+    flex-basis: 60%;
+}
+
