@@ -183,9 +183,9 @@ h1 {
 }
 
 .ck_blue {
-    border: 7px solid var(--db-button);
-    font-size: 5px;
-    padding: 0.2rem 0.4rem;
+    border: 6px solid var(--db-button);
+    font-size: 3px;
+    padding: 0.2rem 0.3rem;
     
 }
 
@@ -198,7 +198,7 @@ h1 {
 .ck_empty {
     border: 1px solid var(--db-language);
     font-size: 8px;
-    padding: 0.35rem 0.7rem;
+    padding: 0.2rem 0.5rem;
 
 }
 
