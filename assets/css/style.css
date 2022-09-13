@@ -25,7 +25,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-
 }
 
 .row {
@@ -239,7 +238,7 @@ h1 {
     padding: 0.5rem 3.6rem;
 }
 
-.level a {
+.level a, .companies a {
     text-decoration: none;
     color: var(--db-button);
 }
@@ -345,7 +344,7 @@ li i{
     gap: 30px;
 }
 
-.task h3 {
+.task h3, .companies h3 {
     font-size: 25px;
     margin-bottom: 2rem;
 }
@@ -359,3 +358,100 @@ li i{
     font-size: 10px;
 }
 
+.task .col_4 {
+    padding-top: 2rem;
+}
+
+.companies h3 {
+    padding-right: 10rem;
+}
+
+.logo_team {
+    display: flex;
+   
+}
+
+.left, .right {
+    margin-top: 5rem;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box img {
+    width: 100px;
+}
+
+.box1 {
+    background-color: var(--db-designit);
+}
+
+.box2 {
+    background-color: var(--db-asu);
+}
+
+.box3 {
+    background-color: var(--db-florida);
+}
+
+.box4 {
+    background-color: var(--db-topps);
+}
+
+.box6 {
+    background-color: var(--db-worldbicycle);
+}
+
+.box7 {
+    background-color: var(--db-jumbo);
+}
+
+.box8 {
+    background-color: var(--db-lonelyplanet);
+}
+
+.box9 {
+    background-color: var(--db-clearchannel);
+}
+.center {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    margin-top: 5rem;
+}
+
+.box5 img{
+    width: 200px;
+}
+
+.box5 {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    background-color: var(--db-designitlarge);
+}
+
+.info_company .rw{
+    display: inline-block;
+    margin-top: 2rem;
+    color: var(--db-lightgrey);
+}
+
+.info_company p {
+    margin-top: 3rem;
+    font-size: 12px;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    font-size: 12px;
+}
