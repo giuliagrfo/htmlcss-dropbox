@@ -379,8 +379,8 @@ li i{
 .left, .right {
     margin-top: 5rem;
     display: flex;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -394,12 +394,14 @@ li i{
 
 .box img {
     width: 100px;
-}
+} 
 
 .box1 {
     background-color: var(--db-designit);
     border: 10px solid var(--db-borderdesign);
 }
+
+
 
 .box2 {
     background-color: var(--db-asu);
@@ -428,10 +430,11 @@ li i{
 .box9 {
     background-color: var(--db-clearchannel);
 }
+
 .center {
     display: flex;
     width: 500px;
-    height: 400px;
+    height: 500px;
     margin-top: 5rem;
 }
 
@@ -485,10 +488,33 @@ li i{
 }
 
 .rw_trial {
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
 }
 
 .trial_title {
     flex-basis: 60%;
+}
+
+
+.faq h3 {
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+
+.faq h6 {
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 10px;
+    border-top: 1px solid;
+
+}
+
+.question {
+    border-bottom: 1px solid;
+    margin-bottom: 6rem;
+}
+
+.question i {
+    margin-left: 8rem;
 }
 
