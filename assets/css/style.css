@@ -374,6 +374,13 @@ li i{
     padding-right: 10rem;
 }
 
+.task img {
+    transition: 1s ease-in-out;
+
+}
+.task img:hover {
+    transform: scale(1.2);
+}
 
 /* #endregion TASK */
 
@@ -530,7 +537,7 @@ li i{
 
 .ask i:hover {
     transform: rotate(360deg);
-    transition: transform 0.3s;
+    transition: transform 1s;
 }
 .answer {
     visibility: hidden;
