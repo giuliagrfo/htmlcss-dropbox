@@ -66,7 +66,12 @@ img {
 }
 
 /* #region BUTTONS */
-button {
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.button {
     background-color: var(--db-button);
     border: none;
     border-radius: 1rem;
@@ -75,40 +80,34 @@ button {
     font-size: 12px;
 }
 
-button:hover {
+.button:hover {
     box-shadow: 3px 8px 6px #222222;
     background-color: rgb(190, 136, 136);
     cursor: pointer;
     color: black;
 }
 
-.level button {
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+.level .button {
     font-size: 10px;
-    padding: 0.5rem 1.5rem;
-    margin-left: 1.2rem;
 }
 
-.card_azienda button {
-    padding: 0.5rem 3.6rem;
+.card_azienda .button {
+    padding: 0.4rem 3rem;
 }
 
-.partner_bt {
+.partner .bt_wt {
     background-color: var(--db-white);
     color: black;
     border: 1px solid black;
-    margin-top: 2rem;
 }
 
-.trial_bt {
+.trial_button .bt_wt {
     background-color: var(--db-white);
     color: black;
     border: 1px solid black;
     padding: 0.5rem 2rem;
 }
 /* #endregion BUTTONS */
-
 
 /* #region COLUMN */
 .col_4 {
@@ -129,7 +128,6 @@ button:hover {
     
 /* #endregion COLUMN */
     
-
  /* #region HEADER */
 header {
     width: 100%;
@@ -160,7 +158,6 @@ header a {
 }
 /* #endregion HEADER */
 
-
 /* #region JUMBO */
 .jumbotron {
     background-color: var(--db-jumbo);
@@ -174,13 +171,11 @@ h1 {
     padding-top: 2rem;
 }
 
-.jumbo_info {
+.jumbo_info p{
     padding-right: 3rem;
+    padding-bottom: 2rem;
 }
 
-.jumbo_info button {
-    margin-top: 2rem;
-}
 
 .cancel {
     font-size: 10px;
@@ -249,7 +244,7 @@ h1 {
     height: 650px;
 }
 
-.level a, .companies a {
+.level .now, .companies a {
     text-decoration: none;
     color: var(--db-button);
 }
@@ -264,12 +259,13 @@ h1 {
     padding-right: 1rem;
 }
 
-
 .month {
     color: #c4c4c4;
 }
 
-
+.link_bt {
+   margin: 2rem 1.5rem;
+}
 
 .otherwise {
     margin-left: 1rem;
@@ -296,7 +292,6 @@ li i{
     color: var(--db-button);
 }
 
-
 .card_team2 {
     border-top: none;
     height: 150px;
@@ -312,22 +307,18 @@ li i{
     padding-left: 1rem;
 }
 
-.team_enterprise h4, .team_enterprise button, .team_large {
-    margin-top: 1rem;
+.team_enterprise h4, .team_large {
+    margin-top: 2rem;
 }
 
 .team_enterprise h4, .task h4 {
     font-size: 16px;
 }
 
-.team_enterprise button {
-    margin-right: 1rem;
-    padding: 0.5rem 1.5rem;
+.contact p {
+    margin-top: 1rem;
 }
 
-.contact p {
-    margin-top: 2rem;
-}
 
 /* #endregion BUSINESS PLAN */
 
@@ -347,6 +338,7 @@ li i{
 
 .partner_info p {
     padding-right: 1rem;
+    margin-bottom: 2rem;
     font-size: 12px;
 }
 /* #endregion PARTNER */
@@ -369,6 +361,7 @@ li i{
 .companies h3 {
     padding-right: 10rem;
 }
+
 
 /* #endregion TASK */
 
