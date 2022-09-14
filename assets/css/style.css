@@ -79,10 +79,11 @@ a {
     color: var(--db-white);
     font-size: 12px;
     transition: background-color 0.7s;
+    transition: box-shadow 0.7s;
 }
 
 .button:hover {
-    box-shadow: 3px 8px 6px #222222;
+    box-shadow: 3px 4px 5px #222222;
     background-color: rgb(190, 136, 136);
     cursor: pointer;
     color: black;
@@ -146,9 +147,6 @@ header {
     width: 25%;
 }
     
-.links {
-    display: inline-block;
-}
 
 header a {
     text-decoration: none;
@@ -159,6 +157,37 @@ header a {
 .nav_right {
     text-align: end;
 }
+
+.menu {
+    display: inline;
+}
+
+.menu .link{
+    display: inline;
+}
+
+.link ul{
+    display: none;
+    list-style: none;
+}
+
+.link li {
+    padding: 1rem;
+}
+
+.link:hover ul{
+    display: block;
+    position: absolute;
+    z-index:1;
+    left: 150px;
+    background: rgba(255, 255, 255, 0.954);
+    padding: 1rem;
+}
+
+li a:hover {
+    color: var(--db-button);
+}
+
 /* #endregion HEADER */
 
 /* #region JUMBO */
@@ -599,16 +628,19 @@ footer, .c_ft {
 } 
 
 .lg_change ul{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 .language:hover {
     cursor: pointer;
+    color: rgb(190, 136, 136);
 }
 
 .language:hover + ul{
-    cursor: pointer;
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .lg_change li {
