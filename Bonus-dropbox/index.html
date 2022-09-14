@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -46,34 +49,50 @@
                     <li class="link"><a class="button" href="">Inizia</a></li>
                 </ul>
             </div>
-        </div>
+        </div>                  
     </header>
 
     <main id="site_main">
        
        <section class="login">
-        <div class="container">
-            <div class="icon">
+        <div class="container_main">
+            <div class="icon clearfix">
               <img src="./img/6b1b22573f9f3d4bba11a9fa5cb45652.png" alt="">
             </div> 
- 
-            <h1>Accedi</h1>
-            
-            <div class="box_mail">
-                <span class="mail">Email</span>
-
-                <div class="email">
-                    <input type="email" name="email" placeholder="inserisci email">
-                </div>
+            <div class="login_box">
+                <h1>Log in</h1>
                 
-            </div>
-
-            <div class="box_password">
-                <span class="pw">Password</span>
-
-                <div class="password">
-                    <input type="password" name="password" placeholder="inserisci password">
+                <div class="box_mail">
+                    
+                    <span class="mail">Email</span>
+    
+                    <div class="email">
+                        <input type="email" name="email" placeholder="inserisci email">
+                    </div>
+                    
                 </div>
+    
+                <div class="box_password">
+                    <span class="pw">Password</span>
+    
+                    <div class="password">
+                        <input type="password" name="password" placeholder="inserisci password"  minlength="2">
+                    </div>
+                </div>
+
+                <div class="log">
+                    <a class="button" href="">Accedi</a>
+                </div>
+                <div class="otherwise">
+                    oppure
+                </div>
+                <div class="lg_google">
+                    <img src="./img/icons8-logo-di-google-50.png" alt=""><a href="">Accedi con Google</a>
+                </div>
+                <div class="lg_apple">
+                    <img src="./img/icons8-mac-os.gif" alt=""><a href="">Accedi con Apple</a>
+                </div>
+
             </div>
         </div>
 
