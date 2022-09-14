@@ -174,6 +174,10 @@ h1 {
     padding-top: 2rem;
 }
 
+.jumbo_img {
+    position: relative;
+}
+
 .jumbo_info p{
     padding-right: 3rem;
     padding-bottom: 2rem;
@@ -195,7 +199,6 @@ h1 {
 .jb_img {
     width: 600px;
     position: absolute;
-    right: 100px;
 }
 /* #endregion JUMBO */
  
@@ -203,6 +206,7 @@ h1 {
 
 .business_plan h3 {
     font-size: 36px;
+    padding-top: 3rem;
 }
 
 .fatturazione {
