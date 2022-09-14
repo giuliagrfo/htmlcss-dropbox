@@ -413,8 +413,8 @@ li i{
     width: 100px;
 } 
 
-path {
-    fill: var(--db-white);
+.box img {
+    filter: invert();
 }
 
 .box1 {
