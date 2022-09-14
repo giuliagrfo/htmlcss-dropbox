@@ -30,6 +30,7 @@ body {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -41,40 +42,85 @@ img {
     content: "";
     clear: both;
     display: table;
-  }
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+
+.container_large {
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--db-jumbo);
+}
+/* #region BUTTONS */
+button {
+    background-color: var(--db-button);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.4rem 0.8rem;
+    color: var(--db-white);
+    font-size: 12px;
+}
+
+button:hover {
+    box-shadow: 3px 8px 6px #222222;
+    background-color: rgb(190, 136, 136);
+    cursor: pointer;
+    color: black;
+}
+
+.level button {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 10px;
+    padding: 0.5rem 1.5rem;
+    margin-left: 1.2rem;
+}
+
+.card_azienda button {
+    padding: 0.5rem 3.6rem;
+}
+
+.partner_bt {
+    background-color: var(--db-white);
+    color: black;
+    border: 1px solid black;
+    margin-top: 2rem;
+}
+
+.trial_bt {
+    background-color: var(--db-white);
+    color: black;
+    border: 1px solid black;
+    padding: 0.5rem 2rem;
+}
+/* #endregion BUTTONS */
+
+
 /* #region COLUMN */
+.col_4 {
+    width: calc((100% / 12)*4);
+}
 
-    .col_2 {
-        width: calc(100% / 12)*2;
-    }
+.col_6 {
+    width: calc((100% / 12)*6);
+}
 
-    .col_3 {
-        width: calc(100% / 12)*3;
-    }
+.col_8 {
+    width: calc((100% / 12)*8);
+}
 
-    .col_4 {
-        width: calc(100% / 12)*4;
-    }
+.col_12 {
+    width: calc((100% / 12)*12);
+}                  
+    
+/* #endregion COLUMN */
+    
 
-    .col_6 {
-        width: calc(100% / 12)*6;
-    }
-    
-    .col_8 {
-        width: calc(100% / 12)*8;
-    }
-    
-    .col_9 {
-        width: calc(100% / 12)*9;
-    }
-
-    .col_12 {
-        width: calc(100% / 12)*12;
-    }
-    
-    /* #endregion COLUMN */
-    
-    
+ /* #region HEADER */
 header {
     width: 100%;
     padding: 1rem;
@@ -90,7 +136,7 @@ header {
 }
     
 .links {
-        display: inline-block;
+    display: inline-block;
 }
 
 header a {
@@ -99,60 +145,36 @@ header a {
     padding: 1rem;
 }
 
-button {
-    background-color: var(--db-button);
-    border: none;
-    border-radius: 1rem;
-    padding: 0.4rem 0.8rem;
-    color: var(--db-white);
-    font-size: 10px;
+.nav_right {
+    text-align: end;
 }
+/* #endregion HEADER */
 
-button:hover {
-    box-shadow: 3px 8px 6px #222222;
-    background-color: var(--db-asu);
-    cursor: pointer;
-}
 
-.partner_button:hover {
-    box-shadow: 3px 8px 6px #222222;
-    background-color: rgb(190, 136, 136);
-    cursor: pointer;
-}
 /* #region JUMBO */
 .jumbotron {
     background-color: var(--db-jumbo);
-    text-align: center;
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 60px;
     padding-top: 8rem;
 }
 
-.jb_container {
-    width: 60%;
-    margin: 0 auto;
-    text-align: start;
-    background-color: var(--db-jumbo);
-
-}
-
-
-.drop_info, .jumbo_img {
+.jumbo_info, .jumbo_img {
     padding-top: 2rem;
 }
 
-.drop_info {
-    padding-right: 1.5rem;
-    width: 300px;
+.jumbo_info {
+    padding-right: 3rem;
 }
 
-.drop_info button {
+.jumbo_info button {
     margin-top: 2rem;
 }
 
 .cancel {
+    font-size: 10px;
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
@@ -166,27 +188,24 @@ h1 {
 .jb_img {
     width: 600px;
     position: absolute;
-    left: 550px;
-    top: 450px;
+    right: 100px;
 }
 /* #endregion JUMBO */
  
-/* #region MAIN */
-.container {
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 6rem;
-}
+/* #region BUSINESS PLAN */
 
 .business_plan h3 {
     font-size: 36px;
 }
 
-.ck_blue {
-    border: 6px solid var(--db-button);
-    font-size: 3px;
-    padding: 0.2rem 0.3rem;
-    
+.fatturazione {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 0.5rem;
+}
+
+.billing {
+    padding-right: 3rem;
 }
 
 .check {
@@ -195,26 +214,19 @@ h1 {
     vertical-align: middle;
 }
 
+.ck_blue {
+    border: 6px solid var(--db-button);
+    font-size: 3px;
+    padding: 0.2rem 0.3rem;
+}
+
 .ck_empty {
-    border: 1px solid var(--db-language);
+    border: 1px solid lightgrey;
     font-size: 8px;
     padding: 0.2rem 0.5rem;
-
 }
 
-.billing {
-    padding-right: 3rem;
-}
-
-.fatturazione {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-right: 0.5rem;
-    display: inline-block;
-}
-/* #endregion MAIN */
-
-.users, .level {
+.users, .level, .card_team2 {
     border: 1px solid var(--db-border);
 }
 
@@ -224,38 +236,8 @@ h1 {
 }
 
 .level {
-    
     border-top: none;
-    width: 200px;
     height: 650px;
-}
-
-.level h4, .cost, .month, .user, .cloud, .share, .contact {
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    
-}
-
-.month, .user, .cloud, .share, .contact, .buynow {
-    font-size: 10px;
-}
-
-
-.month {
-    color: #c4c4c4;
-}
-
-.level button {
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-    font-size: 10px;
-    padding: 0.5rem 1.5rem;
-    margin-left: 1.2rem;
-}
-
-.card_azienda button {
-    padding: 0.5rem 3.6rem;
 }
 
 .level a, .companies a {
@@ -265,6 +247,22 @@ h1 {
 
 .level h4 {
     font-size: 16px;
+}
+
+.level h4, .cost, .month, .user, .cloud, .share, .contact {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+
+.month {
+    color: #c4c4c4;
+}
+
+.month, .user, .cloud, .share, .contact, .buynow, .prime li {
+    font-size: 10px;
 }
 
 .otherwise {
@@ -284,31 +282,30 @@ h1 {
 
 .prime li {
     list-style: none;
-    font-size: 10px;
     padding-top: 1rem;
+    padding-right: 0.5rem;
 }
 
 li i{
     color: var(--db-button);
 }
+/* #endregion BUSINESS PLAN */
 
-/* .card_enterprise {
-    padding-top: 1rem;
-} */
+/* #region  */
 
-.rw_team2 {
+
+
+
+.team_large {
     margin-top: 1rem;
-    width: 100%;
-    flex-direction: column;
-}
-
+} 
 
 .card_team2 {
     padding-top: 1rem;
-    border: 1px solid #ECECEE;
     border-top: none;
     height: 150px;
     text-align: start;
+    
 }
 
 .team_enterprise {
@@ -318,6 +315,10 @@ li i{
 
 .team_enterprise h4 {
     padding-left: 1rem;
+}
+
+.team_enterprise h4, .team_enterprise button {
+    margin-top: 1rem;
 }
 
 .team_enterprise h4, .task h4 {
@@ -354,15 +355,11 @@ li i{
     font-size: 12px;
 }
 
-.partner_button {
-    background-color: var(--db-white);
-    color: black;
-    border: 1px solid black;
-    margin-top: 2rem;
-}
+
 
 .rw_task {
-    gap: 30px;
+    /* gap: 30px; */
+    flex-wrap: wrap;
 }
 
 .task h3, .companies h3{
@@ -499,11 +496,6 @@ li i{
     padding-right: 2rem;
 }
 
-.trial_bt button {
-    background-color: var(--db-white) ;
-    color: var(--db-footer);
-    padding: 0.5rem 2rem;
-}
 
 .rw_trial {
     padding-bottom: 5rem;
