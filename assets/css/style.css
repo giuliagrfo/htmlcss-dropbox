@@ -175,11 +175,29 @@ header a {
     padding: 1rem;
 }
 
-.link:hover ul{
+.link:hover .item1{
     display: block;
     position: absolute;
     z-index:1;
     left: 150px;
+    background: rgba(255, 255, 255, 0.954);
+    padding: 1rem;
+}
+
+.link:hover .item2 {
+    display: block;
+    position: absolute;
+    z-index:1;
+    left: 300px;
+    background: rgba(255, 255, 255, 0.954);
+    padding: 1rem;
+}
+
+.link:hover .item3 {
+    display: block;
+    position: absolute;
+    z-index:1;
+    left: 380px;
     background: rgba(255, 255, 255, 0.954);
     padding: 1rem;
 }
