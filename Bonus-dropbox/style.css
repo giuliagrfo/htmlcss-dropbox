@@ -1,0 +1,316 @@
+:root {
+    --db-footer: #000000;
+    --db-button: #0061FF;
+    --db-florida: #0093CE;
+    --db-lonelyplanet: #0D2481;
+    --db-asu: #61082B;
+    --db-language: #6A6A6A;
+    --db-designit: #A2D39B;
+    --db-jumbo: #B4D0E7;
+    --db-worldbicycle: #D5001F;
+    --db-designitlarge: #F5F5F5;
+    --db-topps: #FF1C1C;
+    --db-clearchannel: #FFD830;
+    --db-white: #FFFFFF;
+    --db-lightgrey: #c4c4c4;
+    --db-border: #ECECEE;
+    --db-borderdesign: #D1E9CD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+
+.container_large {
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--db-jumbo);
+    padding-top: 6rem;
+}
+
+[class^="col_4"] {
+    padding: 0.5rem;
+}
+
+.month, .user, .cloud, .share, .contact, .buynow, .prime li, .cost, .contact, .task p, .answer  {
+    font-size: 10px;
+}
+
+/* #region BUTTONS */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.button {
+    background-color: var(--db-button);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.4rem 0.8rem;
+    color: var(--db-white);
+    font-size: 12px;
+    transition: background-color 0.7s;
+    transition: box-shadow 0.7s;
+}
+
+.button:hover {
+    box-shadow: 3px 4px 5px #222222;
+    background-color: rgb(190, 136, 136);
+    cursor: pointer;
+    color: black;
+
+
+}
+
+.level .button {
+    font-size: 10px;
+}
+
+.card_azienda .button {
+    padding: 0.4rem 3rem;
+}
+
+.partner .bt_wt {
+    background-color: var(--db-white);
+    color: black;
+    border: 1px solid black;
+}
+
+.trial_button .bt_wt {
+    background-color: var(--db-white);
+    color: black;
+    border: 1px solid black;
+    padding: 0.5rem 2rem;
+}
+/* #endregion BUTTONS */
+
+/* #region COLUMN */
+.col_4 {
+    width: calc((100% / 12)*4);
+}
+
+.col_6 {
+    width: calc((100% / 12)*6);
+}
+
+.col_8 {
+    width: calc((100% / 12)*8);
+}
+
+.col_12 {
+    width: calc((100% / 12)*12);
+}                  
+    
+/* #endregion COLUMN */
+    
+ /* #region HEADER */
+header {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--db-white);
+    position: fixed;
+    z-index: 1;
+}
+
+.hd_logo {
+    vertical-align: middle;
+    padding-right: 1rem;
+    width: 25%;
+}
+    
+
+header a {
+    text-decoration: none;
+    color: #000000;
+    padding: 1rem;
+}
+
+.nav_right {
+    text-align: end;
+}
+
+.menu {
+    display: inline;
+}
+
+.menu .link{
+    display: inline;
+}
+
+.link ul{
+    display: none;
+    list-style: none;
+}
+
+.link li {
+    padding: 1rem;
+}
+
+.link:hover .item1{
+    display: block;
+    position: absolute;
+    z-index:1;
+    left: 150px;
+    background: rgba(255, 255, 255, 0.954);
+    padding: 1rem;
+}
+
+.link:hover .item2 {
+    display: block;
+    position: absolute;
+    z-index:1;
+    left: 300px;
+    background: rgba(255, 255, 255, 0.954);
+    padding: 1rem;
+}
+
+.link:hover .item3 {
+    display: block;
+    position: absolute;
+    z-index:1;
+    left: 380px;
+    background: rgba(255, 255, 255, 0.954);
+    padding: 1rem;
+}
+
+li a:hover {
+    color: var(--db-button);
+}
+
+#site_main img {
+    width: 300px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.login h1{
+    text-align: center;
+    font-size: 40px;
+    color: var(--db-button);
+}
+
+.login {
+    margin-bottom: 10rem;
+}
+
+.box_mail {
+    padding-top: 2rem;
+}
+
+.mail, .pw {
+    display: block;
+    padding-bottom: 0.25rem;
+    color: #6A6A6A;
+    text-align: center;
+}
+
+.mail {
+    padding-right: 7rem;
+}
+
+.pw {
+    padding-top: 1rem;
+    padding-right: 5.5rem;
+}
+
+.email, .password {
+    display: flex;
+    justify-content: center;
+}
+
+footer, .c_ft {
+    background-color: var(--db-footer);
+    color: white;
+}
+
+.rw_ft {
+    flex-wrap: nowrap;
+}
+
+.rw_ft li{
+    list-style: none;
+    font-size: 10px;
+    padding-bottom: 0.5rem;
+}
+
+.rw_ft a {
+    text-decoration: none;
+    color: var(--db-white)
+}
+
+.rw_ft h4 {
+    margin-bottom: 1rem;
+}
+
+.lg_change {
+    padding-top: 6rem;
+    font-size: 10px;
+    padding-bottom: 3rem;
+}
+
+.language {
+    border-top: 1px solid lightgray;
+    padding-top: 1.5rem;
+    color:  var(--db-language);
+}
+
+.lg_change i {
+    padding-right: 0.25rem;
+} 
+
+.lg_change ul{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.language:hover {
+    cursor: pointer;
+    color: rgb(190, 136, 136);
+}
+
+.language:hover + ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+.lg_change li {
+    list-style: none;
+}
+
+.lg_change a {
+    text-decoration: none;
+    color: lightgray;
+}
