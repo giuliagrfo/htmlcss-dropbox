@@ -54,7 +54,17 @@ img {
     width: 60%;
     margin: 0 auto;
     background-color: var(--db-jumbo);
+    padding-top: 6rem;
 }
+
+[class^="col_4"] {
+    padding: 0.5rem;
+}
+
+.month, .user, .cloud, .share, .contact, .buynow, .prime li, .cost, .contact, .task p, .answer  {
+    font-size: 10px;
+}
+
 /* #region BUTTONS */
 button {
     background-color: var(--db-button);
@@ -158,7 +168,6 @@ header a {
 
 h1 {
     font-size: 60px;
-    padding-top: 8rem;
 }
 
 .jumbo_info, .jumbo_img {
@@ -256,14 +265,11 @@ h1 {
 }
 
 
-
 .month {
     color: #c4c4c4;
 }
 
-.month, .user, .cloud, .share, .contact, .buynow, .prime li {
-    font-size: 10px;
-}
+
 
 .otherwise {
     margin-left: 1rem;
@@ -289,23 +295,12 @@ h1 {
 li i{
     color: var(--db-button);
 }
-/* #endregion BUSINESS PLAN */
 
-/* #region  */
-
-
-
-
-.team_large {
-    margin-top: 1rem;
-} 
 
 .card_team2 {
-    padding-top: 1rem;
     border-top: none;
     height: 150px;
     text-align: start;
-    
 }
 
 .team_enterprise {
@@ -317,7 +312,7 @@ li i{
     padding-left: 1rem;
 }
 
-.team_enterprise h4, .team_enterprise button {
+.team_enterprise h4, .team_enterprise button, .team_large {
     margin-top: 1rem;
 }
 
@@ -330,13 +325,13 @@ li i{
     padding: 0.5rem 1.5rem;
 }
 
-.cost, .contact {
-    font-size: 10px;
-}
-
 .contact p {
     margin-top: 2rem;
 }
+
+/* #endregion BUSINESS PLAN */
+
+/* #region PARTNER */
 
 .img_partner {
     width: 60%;
@@ -354,14 +349,9 @@ li i{
     padding-right: 1rem;
     font-size: 12px;
 }
+/* #endregion PARTNER */
 
-
-
-.rw_task {
-    /* gap: 30px; */
-    flex-wrap: wrap;
-}
-
+/* #region TASK */
 .task h3, .companies h3{
     font-size: 25px;
     margin-bottom: 2rem;
@@ -372,10 +362,6 @@ li i{
     margin-bottom: 1rem;
 }
 
-.task p {
-    font-size: 10px;
-}
-
 .task .col_4 {
     padding-top: 2rem;
 }
@@ -384,10 +370,17 @@ li i{
     padding-right: 10rem;
 }
 
-/* .lg_team {
+/* #endregion TASK */
+
+/* #region LOGHI TEAM*/
+.lg_team {
     display: flex;
-    
-} */
+    flex-wrap: nowrap;
+}
+
+.lg_team img {
+    width: 100px;
+} 
 
 .left, .right {
     margin-top: 5rem;
@@ -397,6 +390,11 @@ li i{
     width: 100vw;
 }
 
+.center {
+    display: flex;
+    width: 100vw;
+    margin-top: 5rem;
+}
 
 .box {
     flex-basis: 50%;
@@ -406,14 +404,15 @@ li i{
     aspect-ratio: 1/1;
 }
 
-.lg_team img {
-    width: 100px;
-} 
-
 .box img {
     filter: invert();
 }
 
+.box5 img{
+    width: 200px;
+}
+
+/* #region BOX BACKGROUND */
 .box1 {
     background-color: var(--db-designit);
     border: 10px solid var(--db-borderdesign);
@@ -429,6 +428,11 @@ li i{
 
 .box4 {
     background-color: var(--db-topps);
+}
+
+.box5 {
+    padding: 2rem;
+    background-color: var(--db-designitlarge);
 }
 
 .box6 {
@@ -447,20 +451,8 @@ li i{
     background-color: var(--db-clearchannel);
 }
 
-.center {
-    display: flex;
-    width: 100vw;
-    margin-top: 5rem;
-}
+/* #endregion BOX BACKGROUND */
 
-.box5 img{
-    width: 200px;
-}
-
-.box5 {
-    padding: 2rem;
-    background-color: var(--db-designitlarge);
-}
 
 .info_company .rw{
     display: inline-block;
@@ -477,14 +469,11 @@ li i{
 .heading {
     font-size: 12px;
     padding-bottom: 2rem;
-
 }
 
-.container_trial {
-    width: 60%;
-    margin: auto;
-    padding-top: 6rem;
-}
+/* #endregion LOGO TEAM */
+
+/* #region TRIAL */
 
 .trial {
     background-color: var(--db-jumbo);
@@ -496,8 +485,8 @@ li i{
     padding-right: 2rem;
 }
 
-
 .rw_trial {
+    flex-wrap: nowrap;
     padding-bottom: 5rem;
 }
 
@@ -505,7 +494,9 @@ li i{
     flex-basis: 60%;
 }
 
+/* #endregion TRIAL */
 
+/* #region FAQ */
 .faq h3 {
     font-size: 25px;
     margin-bottom: 2rem;
@@ -516,13 +507,11 @@ li i{
     padding-top: 2rem;
     font-size: 10px;
     border-top: 1px solid;
-
 }
 
 .question_3{
     border-bottom: 1px solid;
     margin-bottom: 6rem;
-
 }
 
 .ask i {
@@ -531,9 +520,7 @@ li i{
 
 .answer {
     display: none;
-    font-size: 10px;
     padding-bottom: 2rem;
-
 }
 
 .ask h6:hover {
@@ -542,21 +529,18 @@ li i{
 
 .ask h6:hover + .answer {
     display: block;
-   
-    transition: all 3s ease 0s;
-    
 }
 
-footer {
+/* #endregion FAQ */
+
+/* #region FOOTER */
+footer, .c_ft {
     background-color: var(--db-footer);
     color: white;
 }
 
-.container_ft {
-    width: 60%;
-    margin: auto;
-    padding-top: 5rem;
-    
+.rw_ft {
+    flex-wrap: nowrap;
 }
 
 .rw_ft li{
@@ -578,11 +562,10 @@ footer {
     padding-top: 6rem;
     font-size: 10px;
     padding-bottom: 3rem;
-
 }
 
 .language {
-    border-top: 1px solid white;
+    border-top: 1px solid lightgray;
     padding-top: 1.5rem;
     color:  var(--db-language);
 }
@@ -606,5 +589,7 @@ footer {
 
 .lg_change a {
     text-decoration: none;
-    color: #6A6A6A;
+    color: lightgray;
 }
+
+/* #endregion FOOTER */
